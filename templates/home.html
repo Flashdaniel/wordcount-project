@@ -1,0 +1,9 @@
+<h1>Word Count!</h1>
+<a href="{% url 'about' %}">About this site</a>
+
+<form class="" action="{% url 'count'%}" method="get">
+  {% csrf_token %}
+  <textarea name="fullcount" rows="10" cols="40"></textarea>
+  <br />
+  <input type="submit" name="" value="count!">
+</form>
